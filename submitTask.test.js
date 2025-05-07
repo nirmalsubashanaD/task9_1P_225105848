@@ -7,7 +7,7 @@ test('throws error if no file is submitted', () => {
 test('throws error if deadline is passed', () => {
   const deadline = new Date('2023-12-01');
   const now = new Date('2023-12-02');
-expect(submitTask('task.doc', deadline, now)).toBe('Wrong message'); // intentional fail
+  expect(() => submitTask('task.doc', deadline, now)).toThrow('Deadline passed');
 });
 
 test('submits successfully if file is present and before deadline', () => {
