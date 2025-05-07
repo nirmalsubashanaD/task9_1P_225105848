@@ -1,0 +1,12 @@
+{
+  "name": "task-9.1p",
+  "version": "1.0.0",
+  "description": "Task 9.1P TDD and CI with Jest",
+  "main": "submitTask.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  }
+}
